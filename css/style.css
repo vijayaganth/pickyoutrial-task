@@ -1,0 +1,123 @@
+.container {
+	width: 980px;
+}
+.center {
+	text-align: center;
+}
+h1, h2, h3 {
+	font-weight: bold;
+}
+h2 {
+	font-size: 26px;
+	text-align: center;
+	padding: 20px 0px;
+}
+.button {
+	border: none;
+	border-radius: 5px;
+	display: block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 30px;
+	padding: 15px;
+	text-align: center;
+	width: 100%;
+}
+.button:focus{
+	border: none;
+ 	outline: none;
+}
+.button-primary {
+	background-color: #a3c180;
+}
+.button-secondary {
+	background-color: #a2d5f7;
+}
+/* reset css end */
+
+/* Task one css start */
+.box-block {
+	border: solid 1px #000000;
+	height: 500px;
+	margin-bottom: 30px;
+}
+.black-box {
+	background-color: #000000;
+	width: 150px;
+	height: 150px;
+	position: relative;
+}
+.black-box.animation-forward {
+	animation: boxAnimationForward 3s linear;
+	-webkit-animation: boxAnimationForward 3s linear;
+}
+@keyframes boxAnimationForward {
+	0% {left:0%; top: 0%; transform: translate(0%, 0%);}
+	25% {left:100%; top: 0%; transform: translate(-100%, 0%);}
+	50% {left:100%; top: 100%; transform: translate(-100%, -100%);}
+	75% {left:0%; top: 100%; transform: translate(0%, -100%);}
+	100% {left:0%; top: 0%; transform: translate(0%, 0%);}
+}
+@-webkit-keyframes boxAnimationForward {
+	0% {left:0%; top: 0%; transform: translate(0%, 0%);}
+	25% {left:100%; top: 0%; transform: translate(-100%, 0%);}
+	50% {left:100%; top: -100%; transform: translate(-100%, -100%);}
+	75% {left:0%; top: -100%; transform: translate(0%, -100%);}
+	100% {left:0%; top: 0%; transform: translate(0%, 0%);}
+}
+
+.black-box.animation-backward {
+	animation: boxAnimationBackward 3s linear;
+	-webkit-animation: boxAnimationBackward 3s linear;
+}
+@keyframes boxAnimationBackward {
+	0% {left:0%; top: 0%; transform: translate(0%, 0%);}
+	25% {left:0%; top: 100%; transform: translate(0%, -100%);}
+	50% {left:100%; top: 100%; transform: translate(-100%, -100%);}
+	75% {left:100%; top: 0%; transform: translate(-100%, 0%);}
+	100% {left:0%; top: 0%; transform: translate(0%, 0%);}
+}
+@-webkit-keyframes boxAnimationBackward {
+	0% {left:0%; top: 0%; transform: translate(0%, 0%);}
+	25% {left:0%; top: 100%; transform: translate(0%, 100%);}
+	50% {left:100%; top: 100%; transform: translate(-100%, -100%);}
+	75% {left:100%; top: 0%; transform: translate(-100%, 0%);}
+	100% {left:0%; top: 0%; transform: translate(0%, 0%);}
+}
+/* Task one css end */
+
+/* Task two css start */
+.textBox {
+	margin-bottom: 30px;
+	padding: 15px;
+	width: 100%;
+}
+.list-block ul {
+	border: solid 1px #000000;
+	padding: 30px 30px 10px 30px;
+	margin-bottom: 30px;
+}
+.list-block ul li {
+	padding: 0 0 20px 0px;
+	font-size: 18px;
+	list-style: none;
+}
+.list-block ul li:nth-child(3n) {
+	color:red;
+}
+/* Task two css end */
+
+/* Task three css start */
+.taskThree [class*="col-"] {
+	margin-bottom: 30px;
+}
+.innerCol {
+	border: solid 1px #000000;
+	min-height: 200px;
+	padding: 15px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+/* Task three css end */

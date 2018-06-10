@@ -1,0 +1,32 @@
+@media screen and (max-width: 1000px) {
+	.container {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.button {
+		display: inline-block;
+		width: 280px;
+	}
+	.taskThree [class*="col-"] {
+		width: 50%;
+	}
+	.taskOne [class*="col-"] {
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.black-box {
+		width: 75px;
+		height: 75px;
+	}
+}
+@media screen and (max-width: 360px) {
+	[class*="col-"] {
+		float: none !important;
+		width: 100% !important;
+	}
+}
